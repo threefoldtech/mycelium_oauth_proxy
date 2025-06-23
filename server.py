@@ -135,7 +135,7 @@ def verify():
 
     sei = result["email"]["sei"]
     res = requests.post(
-        "https://openkyc.live/verification/verify-sei",
+        "https://openkyc.threefold.me/verification/verify-sei",
         headers={"Content-Type": "application/json"},
         json={"signedEmailIdentifier": sei},
     )
