@@ -1,10 +1,10 @@
-# OAuth Proxy
+# Mycelium OAuth Proxy
 
 Authentication and authorization middleware using OAuth2 and OIDC protocols. It protects web applications and APIs by acting as a reverse proxy that enforces identity-based access control.
 
 ## What this is
 
-OAuth Proxy is a lightweight server that handles OAuth2 and OpenID Connect (OIDC) authentication and verification on behalf of downstream services. Instead of integrating OAuth handling into every application, services can delegate authentication to this proxy. The proxy validates identity tokens and only forwards requests to protected backends for authenticated and authorized users.
+Mycelium OAuth Proxy is a lightweight server that handles OAuth2 and OpenID Connect (OIDC) authentication and verification on behalf of downstream services. Instead of integrating OAuth handling into every application, services can delegate authentication to this proxy. The proxy validates identity tokens and only forwards requests to protected backends for authenticated and authorized users.
 
 ## What this repository contains
 
@@ -33,7 +33,7 @@ The application is a simple Bottle server, and it can be run using `uwsgi` as fo
 uwsgi --http :{port number} -w server
 ```
 
-## Using the OAuth server in your application
+## Using the Mycelium OAuth Proxy in your application
 
 In order to use this server, the application server must implement the following two endpoints:
 
@@ -44,7 +44,7 @@ You can find a Crystal and Python example [here](examples/README.md).
 
 ## Role in the stack
 
-OAuth Proxy sits at the edge of services that require authenticated access. It integrates with identity providers to secure downstream resources, offloading authentication complexity from application code. It is suitable for protecting admin panels, APIs, and internal tools.
+Mycelium OAuth Proxy sits at the edge of services that require authenticated access. It integrates with identity providers to secure downstream resources, offloading authentication complexity from application code. It is suitable for protecting admin panels, APIs, and internal tools.
 
 ## Relation to ThreeFold
 
