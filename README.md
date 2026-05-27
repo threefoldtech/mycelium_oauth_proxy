@@ -31,3 +31,8 @@ In order to use this server the application server must have follwing two endpoi
 - A callback endpoint that receives the data from `3bot connect` and sends it to Oauth server to verify
 
 You can find a crystal lang and python example [here](examples/README.md).
+
+## License
+
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+Copyright (c) TFTech NV.
